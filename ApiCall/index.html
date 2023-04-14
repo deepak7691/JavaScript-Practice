@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Using fetch</h1>
+    <ul id="teamList"></ul>
+    <br><br>
+    <h1>Using axios</h1>
+    <ul id="teamList2"></ul>
+    <br><br>
+    <h1>using async await</h1>
+    <ul id="teamList3"></ul>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        //   ***************************************Fetch********************************************************************************
+        fetch("https://my-json-server.typicode.com/FreSauce/json-ipl/data")
+            .then(response => response.json())
+            .then(data => {
+                console.log(data)
+                const teamList = document.getElementById("teamList");
+                data.forEach(team => {
+                    const li = document.createElement("li");
+                    li.textContent = team.Team;
+                    teamList.appendChild(li);
+                });
+            })
+//   **************************************************Axios********************************************************************
+        axios.get("https://my-json-server.typicode.com/FreSauce/json-ipl/data")
+            .then(response => {
+                const data = response.data;
+                console.log(data)
+                const teamList2 = document.getElementById("teamList2");
+                data.forEach(team => {
+                    const li = document.createElement("li");
+                    li.textContent = team.Team;
+                    teamList2.appendChild(li);
+                });
+                
+            })
+
+
+ //   ******************************************************Async Await***************************************************************           
+            async function data(){
+                const response = await fetch("https://my-json-server.typicode.com/FreSauce/json-ipl/data");
+                const data =  await response.json();
+                console.log("Third" ,data)
+                const teamList3 = document.getElementById("teamList3");
+                data.forEach(team => {
+                    const li = document.createElement("li");
+                    li.textContent = team.Team;
+                    teamList3.appendChild(li);
+                });
+                
+            }
+            data();
+            
+           
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>
