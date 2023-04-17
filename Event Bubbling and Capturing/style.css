@@ -1,0 +1,16 @@
+.container {
+    border: 1px solid black;
+    padding: 10px;
+    height: 70%;
+    width: 50%;
+    margin: 20px auto;
+  }
+  #outer {
+    background-color: lightgray;
+  }
+  #middle {
+    background-color: lightblue;
+  }
+  #inner {
+    background-color: lightgreen;
+  }
