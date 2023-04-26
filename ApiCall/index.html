@@ -25,46 +25,55 @@
             .then(response => response.json())
             .then(data => {
                 console.log(data)
+            //     const teamList = document.getElementById("teamList");
+            //     data.forEach(team => {
+            //         const li = document.createElement("li");
+            //         li.textContent = team.Team;
+            //         teamList.appendChild(li);
+            //     });
+            // })
+
+              for(let team of data){
                 const teamList = document.getElementById("teamList");
-                data.forEach(team => {
-                    const li = document.createElement("li");
+                const li = document.createElement("li");
                     li.textContent = team.Team;
                     teamList.appendChild(li);
-                });
+              }
             })
+
+     
 //   **************************************************Axios********************************************************************
-        axios.get("https://my-json-server.typicode.com/FreSauce/json-ipl/data")
-            .then(response => {
-                const data = response.data;
-                console.log(data)
-                const teamList2 = document.getElementById("teamList2");
-                data.forEach(team => {
-                    const li = document.createElement("li");
-                    li.textContent = team.Team;
-                    teamList2.appendChild(li);
-                });
+//         axios.get("https://my-json-server.typicode.com/FreSauce/json-ipl/data")
+//             .then(response => {
+//                 const data = response.data;
+//                 console.log(data)
+//                 const teamList2 = document.getElementById("teamList2");
+//                 data.forEach(team => {
+//                     const li = document.createElement("li");
+//                     li.textContent = team.Team;
+//                     teamList2.appendChild(li);
+//                 });
                 
-            })
+//             })
 
 
- //   ******************************************************Async Await***************************************************************           
-            async function data(){
-                const response = await fetch("https://my-json-server.typicode.com/FreSauce/json-ipl/data");
-                const data =  await response.json();
-                console.log("Third" ,data)
-                const teamList3 = document.getElementById("teamList3");
-                data.forEach(team => {
-                    const li = document.createElement("li");
-                    li.textContent = team.Team;
-                    teamList3.appendChild(li);
-                });
+//  //   ******************************************************Async Await***************************************************************           
+//             async function data(){
+//                 const response = await fetch("https://my-json-server.typicode.com/FreSauce/json-ipl/data");
+//                 const data =  await response.json();
+//                 console.log("Third" ,data)
+//                 const teamList3 = document.getElementById("teamList3");
+//                 data.forEach(team => {
+//                     const li = document.createElement("li");
+//                     li.textContent = team.Team;
+//                     teamList3.appendChild(li);
+//                 });
                 
-            }
-            data();
+//             }
+//             data();
             
            
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
 </body>
-
-</html>
+ </html>
