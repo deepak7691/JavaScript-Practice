@@ -52,3 +52,16 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+console.log('start'); 
+setTimeout(() => console.log('1'), 0);
+Promise.resolve().then(() => console.log('2'));
+Promise.resolve().then(() => setTimeout(() => console.log('3')));
+Promise.resolve().then(() => console.log('4'));
+setTimeout(() => console.log('5'));
+const p = new Promise(resolve => {
+    console.log('inside promise');
+    console.log('6');
+    resolve('test value');                          
+});
+p.then(() => { console.log('7'); });
+console.log('end');
