@@ -52,16 +52,30 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-console.log('start'); 
-setTimeout(() => console.log('1'), 0);
-Promise.resolve().then(() => console.log('2'));
-Promise.resolve().then(() => setTimeout(() => console.log('3')));
-Promise.resolve().then(() => console.log('4'));
-setTimeout(() => console.log('5'));
-const p = new Promise(resolve => {
-    console.log('inside promise');
-    console.log('6');
-    resolve('test value');                          
-});
-p.then(() => { console.log('7'); });
-console.log('end');
+// console.log('start'); 
+// setTimeout(() => console.log('1'), 0);
+// Promise.resolve().then(() => console.log('2'));
+// Promise.resolve().then(() => setTimeout(() => console.log('3')));
+// Promise.resolve().then(() => console.log('4'));
+// setTimeout(() => console.log('5'));
+// const p = new Promise(resolve => {
+//     console.log('inside promise');
+//     console.log('6');
+//     resolve('test value');                          
+// });
+// p.then(() => { console.log('7'); });
+// console.log('end');
+
+
+
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// const myString = "Hello, World!"; // The string to be reversed
+// let reversedString = ""; // The variable to hold the reversed string
+
+// // Loop through each character in the string starting from the end
+// for (let i = myString.length - 1; i >= 0; i--) {
+//   reversedString += myString[i]; // Add each character to the beginning of the reversed string
+// }
+
+// console.log(reversedString); // Output: "!dlroW ,olleH"
