@@ -52,3 +52,12 @@ const animalPrototype = {
 
   
   
+
+
+const arr = [ 1,5,4,6]
+
+Array.prototype.con= function(){
+  console.log("I am from proto")
+}
+
+arr.con() // I am from proto

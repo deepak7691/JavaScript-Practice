@@ -52,20 +52,20 @@
 
 //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-console.log('start'); 
-setTimeout(() => console.log("50"))
-setTimeout(() => console.log('1'), 0);
-Promise.resolve().then(() => console.log('2'));
-Promise.resolve().then(() => setTimeout(() => console.log('3')));
-Promise.resolve().then(() => console.log('4'));                     //   start  inP  6 end  2 4 7  50 1 5 3
-setTimeout(() => console.log('5'));
-const p = new Promise(resolve => {
-    console.log('inside promise');
-    console.log('6');
-    resolve('test value');                          
-});
-p.then(() => { console.log('7'); });
-console.log('end');
+// console.log('start'); 
+// setTimeout(() => console.log("50"))
+// setTimeout(() => console.log('1'), 0);
+// Promise.resolve().then(() => console.log('2'));
+// Promise.resolve().then(() => setTimeout(() => console.log('3')));
+// Promise.resolve().then(() => console.log('4'));                     //   start  inP  6 end  2 4 7  50 1 5 3
+// setTimeout(() => console.log('5'));
+// const p = new Promise(resolve => {
+//     console.log('inside promise');
+//     console.log('6');
+//     resolve('test value');                          
+// });
+// p.then(() => { console.log('7'); });
+// console.log('end');
 
 
 
@@ -80,3 +80,13 @@ console.log('end');
 // }
 
 // console.log(reversedString); // Output: "!dlroW ,olleH"
+
+
+//**********************************
+function say(){
+    console.log(name);
+  
+    var name = "uoeb";
+  
+}
+say();

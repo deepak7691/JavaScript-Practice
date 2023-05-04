@@ -1,4 +1,4 @@
-// Q1)   Which function is used to parse the string to int in js....?
+// Q1 )   Which function is used to parse the string to int in js....?
 // Ans >>  The parseInt() function , it takes two arguments: the string to be parsed and the radix (optional). The radix specifies the base of the number system to be used (e.g., 2 for binary, 8 for octal, 10 for decimal, 16 for hexadecimal). If the radix is not specified, parseInt() assumes a decimal (base 10) number system.
 
 // const str = "123";

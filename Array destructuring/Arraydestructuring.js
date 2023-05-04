@@ -9,7 +9,7 @@ console.log(r1, r2, r3, r4, r5, r6, r7)
 const numbers = [1, 2, 3, 4, 5];
 
 // Extracting the first element and rest of the elements into a new array
-const [first, ...rest] = numbers;
+const [first, second , ...rest] = numbers;
 
 console.log(first); // Output: 1
 console.log(rest); // Output: [2, 3, 4, 5] 
