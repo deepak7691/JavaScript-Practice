@@ -173,7 +173,7 @@
 
 // Q9 )
 
-console.log([..."Deepak"])  // Output - [ 'D', 'e', 'e', 'p', 'a', 'k' ]
+console.log([..."Deepak"])      // Output - [ 'D', 'e', 'e', 'p', 'a', 'k' ]
 
 //  This is because the spread syntax splits the string into individual characters and places them into an array.
 
