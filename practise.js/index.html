@@ -18,13 +18,13 @@
             .then(response => response.json())
             .then(data => {
 
-                const elect = document.getElementById("country")
+                const select = document.getElementById("country")
                 data.map(item => {
                     var option = document.createElement("option");
                     option.value = item.name.common
                     option.textContent = item.name.common
                     console.log(item.name.common)
-                    elect.appendChild(option)
+                    select.appendChild(option)
                 })
             })
 
