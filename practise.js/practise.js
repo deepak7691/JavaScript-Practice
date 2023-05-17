@@ -83,10 +83,20 @@
 
 
 //**********************************
-function say(){
-    console.log(name);
+// function say(){
+//     console.log(name);
   
-    var name = "uoeb";
+//     var name = "uoeb";
   
-}
-say();
+// }
+// say();
+
+
+// var name = "Deepak";
+// function a(){
+//     console.log(name);
+//      name = "sjfhh"
+// }
+// a()
+
+

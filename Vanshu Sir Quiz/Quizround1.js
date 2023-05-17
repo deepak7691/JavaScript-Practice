@@ -60,22 +60,22 @@
 
 // Q4 )
 
-// var x = 3;
+var x = 3;
 
-// var foo = {
-//     x: 2,
-//     baz: {
-//         x: 1,
-//         bar: function () {
-//             return this.x;
-//         }
-//     }
-// }
+var foo = {
+    x: 2,
+    baz: {
+        x: 1,
+        bar: function () {
+            return this.x;
+        }
+    }
+}
 
-// var go = foo.baz.bar;
+var go = foo.baz.bar;
 
-// alert(go());               // alert 3
-// alert(foo.baz.bar());      // alert 1
+alert(go());               // alert 3
+alert(foo.baz.bar());      // alert 1
 
 
 //*************************************************************************************************************************
@@ -159,14 +159,14 @@
 
 // Q8 )
 
-function sayHi() {
-    console.log(name);
-    console.log(age);    // Hoisting Concet
-    var name = "Ayush"
-    let age = 21;
-}
+// function sayHi() {
+//     console.log(name);
+//     console.log(age);    // Hoisting Concet
+//     var name = "Ayush"
+//     let age = 21;
+// }
 
-sayHi();
+// sayHi();
 
 
 
@@ -189,11 +189,11 @@ sayHi();
 
 // Q10 )
 
-function sayHi() {
-    return (() => 0)();
-  }
+// function sayHi() {
+//     return (() => 0)();
+//   }
 
-console.log(typeof sayHi());  // number bcoz type of 0 is number
+// console.log(typeof sayHi());  // number bcoz type of 0 is number
 
 
 //*************************************************************************************************************************
@@ -201,28 +201,28 @@ console.log(typeof sayHi());  // number bcoz type of 0 is number
 
 // Q11 ) 
 
-console.log(1 == '1');        // true
-console.log(false == '0');    // true
-console.log(true == '1');     // true
-console.log('1' == '01');     // false
-console.log(10 == 5 + 5);     // true
+// console.log(1 == '1');        // true
+// console.log(false == '0');    // true
+// console.log(true == '1');     // true
+// console.log('1' == '01');     // false
+// console.log(10 == 5 + 5);     // true
 
 
 //*************************************************************************************************************************
 
 // Q12 )
 
-function checkAge(data) {
-    if (data === { age: 18 }) {
-        console.log('You are an adult!');
-    } else if (data == { age: 18 }) {
-        console.log('You are still an adult. ');
-    } else {
-        console.log(`Hmm.. You don't have an age I guess`)
-    }
-}
+// function checkAge(data) {
+//     if (data === { age: 18 }) {
+//         console.log('You are an adult!');
+//     } else if (data == { age: 18 }) {
+//         console.log('You are still an adult. ');
+//     } else {
+//         console.log(`Hmm.. You don't have an age I guess`)
+//     }
+// }
 
-checkAge({ age: 18 });  // Hmm.. You don't have an age I guess bcoz obj comparison is only possible through reference not by value
+// checkAge({ age: 18 });  // Hmm.. You don't have an age I guess bcoz obj comparison is only possible through reference not by value
 
 
 //*************************************************************************************************************************
@@ -230,22 +230,22 @@ checkAge({ age: 18 });  // Hmm.. You don't have an age I guess bcoz obj comparis
 
 // Q13 ) Will both functions return the same output...??
 
-function foo1() {
-    return {
-        bar: "hello"
-    }
-}
+// function foo1() {
+//     return {
+//         bar: "hello"
+//     }
+// }
 
 
-function foo2() {
-    return
-    {
-        bar: "hello"
-    }
-}
+// function foo2() {
+//     return
+//     {
+//         bar: "hello"
+//     }
+// }
 
-console.log(foo1())    //  { bar: 'hello' }
-console.log(foo2())    //  undefined
+// console.log(foo1())    //  { bar: 'hello' }
+// console.log(foo2())    //  undefined
 
 // Reason >>>   No, the two functions will not return the same output.
 
