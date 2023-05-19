@@ -10,14 +10,14 @@ fetch(api)
         data.map(team => {
             const tr = document.createElement("tr")
             tr.innerHTML = `
-            <td>${team.No}</td>
-            <td>${team.Team}</td>
-            <td>${team.Matches}</td>
-            <td>${team.Won}</td>
-            <td>${team.Lost}</td>
-            <td>${team.Tied}</td>
-            <td>${team.NRR}</td>
-            <td>${team.Points}</td>
+            <td style="border: 1px solid black; text-align: center">${team.No}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Team}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Matches}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Won}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Lost}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Tied}</td>
+            <td style="border: 1px solid black; text-align: center">${team.NRR}</td>
+            <td style="border: 1px solid black; text-align: center">${team.Points}</td>
           `;
 
             tableBody.appendChild(tr);

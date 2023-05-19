@@ -73,10 +73,10 @@ countryDropdown.addEventListener("change", (event) => {
     cityDropdown.innerHTML = '<option value="">--Please choose a city--</option>';
 
     const selectedCountry = countryData.find((country) => country.id == event.target.value)
-    console.log(event.target)
-    console.log(event)
+    // console.log("event Traget " , event.target)
+    // console.log("event" ,event.target.value)
 
-    console.log(selectedCountry)
+    // console.log("country" ,selectedCountry)
 
     if (selectedCountry) {
         cityDropdown.disabled = false;

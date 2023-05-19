@@ -25,20 +25,16 @@
             .then(response => response.json())
             .then(data => {
                 console.log(data)
-            //     const teamList = document.getElementById("teamList");
-            //     data.forEach(team => {
-            //         const li = document.createElement("li");
-            //         li.textContent = team.Team;
-            //         teamList.appendChild(li);
-            //     });
-            // })
+                const ul = document.getElementById("teamList")
+                data.map(item =>{
+                    const list = document.createElement("li");
+                    list.innerText = `${item.Team}`
+                    ul.appendChild(list)
 
-              for(let team of data){
-                const teamList = document.getElementById("teamList");
-                const li = document.createElement("li");
-                    li.textContent = team.Team;
-                    teamList.appendChild(li);
-              }
+                })
+            
+
+
             })
 
      
